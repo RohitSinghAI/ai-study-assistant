@@ -1,31 +1,75 @@
+
+# =========================
 # Python
+# =========================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 .venv/
 venv/
 env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# Environment
+# =========================
+# Environment Variables
+# =========================
 .env
 .env.*
+!.env.example
 
+# =========================
 # Database
+# =========================
 *.db
 *.sqlite
 *.sqlite3
 
-# Uploaded PDFs
+# =========================
+# Uploaded PDFs and Files
+# =========================
 uploads/
 *.pdf
 
-# RAG generated files
+# =========================
+# RAG Generated Files
+# =========================
 rag_data/
 *.index
+*.faiss
 
+# =========================
+# React / Vite / Node.js
+# =========================
+node_modules/
+dist/
+dist-ssr/
+.vite/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+# Build and Cache
+# =========================
+.cache/
+.temp/
+tmp/
+
+# =========================
 # IDE
+# =========================
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# OS
+# =========================
+# Operating System
+# =========================
 .DS_Store
 Thumbs.db
+Desktop.ini
